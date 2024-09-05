@@ -1,0 +1,61 @@
+﻿<Window x:Class="SetupTensServer.RestoreDatabaseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Restore Database"
+        Height="250" Width="460"
+        WindowStartupLocation="CenterScreen"
+        Background="#F7F7F7"
+        FontFamily="Segoe UI"
+        FontSize="14"
+        ResizeMode="NoResize">
+
+    <Grid Margin="10">
+        <Border Background="White"
+                CornerRadius="10"
+                Padding="20"
+                Margin="10"
+                Effect="{DynamicResource DropShadow}">
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="350">
+
+                <!-- Title -->
+                <TextBlock Text="Restore Database"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="#3FACDA"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20" />
+
+                <!-- File Selection Section -->
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                    <TextBox Name="FilePathTextBox"
+                             Width="250"
+                             Height="30"
+                             IsReadOnly="True"
+                             VerticalAlignment="Center"
+                             Margin="0,0,10,0" 
+                             Background="#F7F7F7"
+                             BorderBrush="#B0B0B0"/>
+                    <Button Content="Browse"
+                            Width="80"
+                            Height="30"
+                            Background="#3FACDA"
+                            Foreground="White"
+                            BorderBrush="#3FACDA"
+                            Cursor="Hand"
+                            Click="BrowseButton_Click"/>
+                </StackPanel>
+
+                <!-- Restore Button -->
+                <Button Content="Restore"
+                        Width="250"
+                        Height="40"
+                        Background="#5DADE2"
+                        Foreground="White"
+                        BorderBrush="#5DADE2"
+                        HorizontalAlignment="Center"
+                        Click="RestoreButton_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
