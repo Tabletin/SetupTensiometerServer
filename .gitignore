@@ -1,2 +1,4 @@
 InstallerSetupServer/
 .vs/
+SetupTensServer/bin
+SetupTensServer/obj
